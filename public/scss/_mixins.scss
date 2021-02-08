@@ -1,0 +1,266 @@
+@import 'colors-fonts';
+@import 'sizes-and-breackpoints';
+@import 'animations';
+
+//inlude an IF statement to control the sizes according to 
+//screeen sizes where you see ===IF====
+
+@mixin menu
+{
+  .menu-closed
+  {
+    &:hover
+    {
+      cursor: pointer;
+    }
+    height: 4rem;
+    width: 5.3rem;
+    margin: $size-between-elements-small;
+    z-index: 3;
+    .menu
+    {
+      width: 5rem;
+      height: 1rem;
+      box-shadow: $blue-shadow;
+      display: flex;
+      justify-self: left;
+      margin: 0;
+      transition: menu-open 300ms infinite;
+    } 
+    .menu::after
+    {
+        @extend .menu;
+        content: "";
+        position: absolute;
+        margin: 1.5rem 0;
+        box-shadow: $blue-shadow;
+        transition: menu-open-2 300ms infinite;
+    }
+ }
+}
+
+ @mixin standard-image
+ {
+  @content;
+   width: 90%;
+   max-width: 700px;
+   height: 90vw;
+   max-height: 600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ @mixin standard-parragraph
+ {
+   //===IF===
+   text-align: center;
+   font-size: $text-size-mobile;
+   font-family: $text-font;
+   line-height: 2rem;
+   width: $ninety-percent;
+   max-width: $five-hundred-px;
+   margin: $size-between-elements-small auto;
+   @content;
+   white-space: pre-line;
+ }
+
+ @mixin alert {
+
+     width: $ninety-percent;
+     padding: $size-between-elements-tiny;
+     background: $alert-color;
+     border-radius: 10px;
+     margin: $size-between-elements-small auto;
+     @content;
+}
+
+@mixin standard-button
+{
+padding: $size-between-elements-tiny;
+max-width: 20rem;
+display: block;
+color: $font-color;
+background: $main-color;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+margin: $size-between-elements-small auto;
+border: 3px solid $main-color;
+transition: 300ms ease-in-out;
+&:hover
+{
+color: $main-color;
+font-family: $text-font;
+background: $secondary-color;
+}
+}
+
+@mixin standard-h4
+{
+  font-family: $text-font;
+  color: $font-color;
+  width: $ninety-percent;
+  max-width: $five-hundred-px;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: $size-between-elements-tiny auto;
+}
+
+@mixin open-menu
+{
+  //======IF=====
+  @include menu;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: $main-color;
+  position: fixed;
+  top: 0;
+  a
+  {
+    font-size: $h3-title;
+    font-weight: 800;
+    font-family: $text-font;
+    color: $secondary-color;
+    margin: $size-between-elements-small auto;
+    transition: transform 300ms ease-in-out;
+    display: block;
+    text-align: center;
+    &:hover
+    {
+      transform: translate(20px);
+    }
+    &:nth-child(2)
+    {
+      margin: $size-between-elements-giant auto $size-between-elements-small;
+    }
+ }
+ .private-message-wrapper
+ {
+   width: 15rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: auto;
+   cursor: pointer;
+   transition: transform 300ms ease-in-out;
+   &:hover
+   {
+     transform: translate(20px);
+   }
+ #Capa_1
+ {
+   width: 15%;
+   height: auto;
+   max-width: 50px;
+   display: inline-block;
+   stroke: $secondary-color;
+   fill: $secondary-color;
+   float: left;
+ }
+ #message
+ {
+   color: $secondary-color;
+   font-size: $small-text-size;
+   display: inline-block;
+ }
+}
+}
+@mixin editor-section 
+//whole rapper in the page
+{
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+
+  //ticket wrapper
+  .editor-section__announcement
+  {
+    margin: $size-between-elements-small 0 ;
+    //title
+  .standard-h4
+  {
+    vertical-align: middle;
+    padding: $size-between-elements-tiny;
+    position: relative;
+    background: $secondary-color;
+    color: $main-color;
+    line-height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, .5);
+    //cross icon
+    .cross-wrapper
+    {
+      display: block;
+      position: relative;
+      width: 35px;
+      height: 30px;
+      top: 2px;
+      cursor: pointer;
+    span:first-child, span:nth-child(2)
+    {
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 3px;
+      background: $main-color;
+      top: -10px;
+    }
+    span:nth-child(2)
+    {
+      left: 0px;
+      top: -57px;
+      transform: rotate(90deg);
+    }
+  }
+  //edit button
+    span:nth-child(2)
+    {
+      color: $main-color;
+      font-size: 1rem;
+      font-weight: 200;
+      cursor: pointer;
+      display: none;
+    }
+  }
+  //second major div wrapping the editbale text
+  .hidding-element
+  {
+    display: none;
+    border: 2px solid rgb(196, 196, 196);
+    box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, .5);
+    .editorInput, .editorTextArea
+    {
+      margin: $size-between-elements-tiny;
+      display: block;
+      margin: $size-between-elements-tiny auto;
+      width: 90%;
+      height: 20rem;
+      font-size: $text-size-mobile;
+      resize: none;
+      border: 1px solid $secondary-color;
+      padding: $size-between-elements-tiny;
+      white-space: pre-line;
+    };
+    .editorInput
+    {
+      height: 3rem;
+    }
+  }
+  #on-off
+ {
+   display: inline-block;
+   transform: scale(2.5);
+   margin: $size-between-elements-small 10%;
+ }
+ #on-off-label
+ {
+  display: inline-block;
+  width: 10rem;
+ }
+}
+}

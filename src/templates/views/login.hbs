@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+    <title>FACC | LOGIN</title>
+</head>
+<body>
+<div class="menu-closed" onclick="openIt(this)"><div class="menu"></div></div>
+{{>menu}}
+<form class="login-info" method="POST" action="/login">
+<label class="standard-h3" for="input" >USERNAME</label>
+<input type="text" name="username">
+<label class="standard-h3" for="input" >PASSWORD</label>
+<input type="password" name="password">
+<button class="standard-button">LOGIN</button>
+</form>
+<p>{{loginMessage}}</p>
+{{>footer}}
+   <div class="my-info">Designed by <a href="https://www.instagram.com/xharccoal/">Xharcoal 💻 ©️</a></div>
+{{!-- <script src="js/main.js"></script> --}}
+</body>
+</html>

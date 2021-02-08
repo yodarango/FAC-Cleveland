@@ -1,0 +1,11 @@
+@keyframes menu-open
+{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(45deg)}
+}
+
+@keyframes menu-open-2
+{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(-45deg)}
+}

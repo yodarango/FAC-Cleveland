@@ -1,0 +1,20 @@
+@import "colors-fonts";
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-style: none;
+    font-family: $text-font;
+    color: $font-color;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*::-webkit-scrollbar
+{
+    width: none;
+}
+body
+{
+background: $main-color;
+}

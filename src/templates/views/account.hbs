@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/main.css">
+    <title>FACC | ACCOUNT</title>
+</head>
+<body>
+    {{>menu}}
+    <div class="menu-closed" onclick="openIt(this)"><div class="menu"></div></div>
+    <h3 class="standard-h3">WELCOME TO FACC EDITOR</h3>
+    <p class="standard-parragraph">to edit a especific block of text, simply edit and save the content in each ection.</p>
+    <div class="editor-section">
+       <div class="editor-section__announcement">
+           <h4 class="standard-h4"><span class="cross-wrapper"><span></span><span></span></span>ANNOUNCEMENT<span id="announcement-save" class="save">Save</span></h4>
+           <div id="announcement" class="hidding-element">
+           <input class="editorInput" id="announcement_title" name="announcement" value="{{anTitle}}" maxlength="50">
+           <textarea id="announcement_text" class="editorTextArea">{{anContent}}</textarea>
+           <input id="on-off" type="checkbox" {{anCheck}}>
+           <label id="on-off-label" for="on-off">Show Message</label>
+          </div>
+       </div>
+       <div class="editor-section__announcement">
+           <h4 class="standard-h4"><span class="cross-wrapper"><span></span><span></span></span>WHAT'S UP<span class="save">Save</span></h4>
+           <div id="news" class="hidding-element">
+          <input class="editorInput"  id="news_title" value="{{nTitle}}"  maxlength="50">
+           <textarea id="news_text" class="editorTextArea">{{nContent}}</textarea>
+          </div>
+          </div>
+          <div class="editor-section__announcement">
+           <h4 class="standard-h4"><span class="cross-wrapper"><span></span><span></span></span>WELCOME<span class="save">Save</span></h4>
+           <div id="welcome" class="hidding-element">
+          <input class="editorInput" id="welcome_title" value="{{wTitle}}"  maxlength="50">
+           <textarea id="welcome_text" class="editorTextArea">{{wContent}}</textarea>
+          </div>
+       </div>
+       
+    <div class="editor-section__announcement">
+           <h4 class="standard-h4"><span class="cross-wrapper"><span></span><span></span></span>ABOUT<span class="save">Save</span></h4>
+           <div id="about" class="hidding-element">
+           <input class="editorInput" id="about_title" value="{{aTitle}}" maxlength="50">
+           <textarea id="about_text" class="editorTextArea">{{aContent}}</textarea>
+          </div>
+          </div>
+       <div class="editor-section__announcement">
+           <h4 class="standard-h4"><span class="cross-wrapper"><span></span><span></span></span>PASTORAL TEAM<span class="save">Save</span></h4>
+           <div id="pastoral" class="hidding-element">
+          <input class="editorInput" id="pastoral_title" value="{{pTitle}}" maxlength="50">
+           <textarea id="pastoral_text" class="editorTextArea">{{pContent}}</textarea>
+          </div>
+       </div>
+       </div>
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+</html>

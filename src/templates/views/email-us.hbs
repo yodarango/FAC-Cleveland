@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/main.css">
+    <title>FACC | EMAILS</title>
+</head>
+<body>
+     <div class="menu-closed" onclick="openIt(this)"><div class="menu"></div></div>
+    {{>menu}}
+    <form class="form" method="POST" action="/email-us">
+        <label class="standard-h3" for="name">Name</label>
+        <input  name="name" id="name" type="text" placeholder="optional">
+        <label class="standard-h3" for="phone">Phone</label>
+        <input  name="phone" id="phone" maxlength="10" type="tel" placeholder="optional">
+        <label class="standard-h3" for="email" >Email</label>
+        <input  name="email" id="email" type="email" placeholder="optional">
+        <label class="standard-h3" for="question" >Enter Your Message</label>
+        <textarea name="message" id="question" cols="30" rows="10" maxlength="1000" required></textarea>
+        <button class="standard-button">SEND MESSAGE</button>
+    </form>
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,432 @@
+@import "colors-fonts";
+@import "sizes-and-breackpoints";
+@import "reset-body-globals";
+@import 'animations';
+
+//landing screen
+.first-wrapper-index
+{
+  @include menu;
+  width: 100%;
+  height: 100vh;
+}
+  #welcome-title
+  {
+  font-family: $title-font;
+  font-size: $big-title;
+  color: $main-color;
+  text-shadow: $blue-shadow;
+  text-align: center;
+  margin: 17rem auto 0;
+  width: 100%;
+  }
+  #welcome-title::before
+  {
+  content: "";
+  width: 100%;
+  height: 25rem;
+  background: $secondary-color;
+  position: absolute;
+  left: 0;
+  bottom: -20rem;
+  z-index: -1;
+  clip-path: polygon(0 100%, 0% 0%, 50% 10%, 100% 0%, 100% 100%);
+}
+#count-down 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  width: $ninety-percent;
+  max-width: $five-hundred-px;
+  margin: auto;
+  h3
+  {
+    font-size: $medium-title;
+    color: $main-color;
+    text-shadow: 3px 3px 5px $shadow-color, -3px -3px 5px $shadow-color;
+  }
+}
+
+//=====BELOW LANDING====
+.second-wrapper-index
+{
+  z-index: 3;
+}
+  .standard-image
+  {
+    @include standard-image
+    {
+      background: url(../images/news.jpg);
+      margin: auto;
+    }
+  }
+.second-wrapper-index-article
+{
+  @include standard-parragraph
+  {
+  margin: $size-between-elements-small auto;
+  width: $ninety-percent;
+  max-width: $five-hundred-px;
+  }
+}
+.standard-h3
+{
+  font-family: $text-font;
+  text-align: center;
+  width: $ninety-percent;
+  max-width: $five-hundred-px;
+  margin: $size-between-elements-small auto;
+  font-size: $h3-title;
+}
+
+
+//========THIRD WRAP SCHEDULE==========
+.third-wrapper-index
+{
+  width: 100%;
+  height: auto;
+  padding: .2rem 0 $size-between-elements-small;
+  margin: $size-between-elements-large 0;
+  background-color: $secondary-color;
+
+  .standard-h3
+  {
+    color: $main-color;
+    margin: 0 auto;
+    max-width: $ninety-percent;
+  }
+  .standard-parragraph
+  {
+  @include standard-parragraph
+  {
+    color: $main-color;
+    text-align: center;
+  }
+  margin: $size-between-elements-tiny auto $size-between-elements-small;
+}
+.alert
+{
+  @include alert;
+}
+.medium-button
+{
+@include standard-button;
+margin: 0 auto;
+}
+}
+  .standard-svg
+  {
+    position: relative;
+    display: block;
+    stroke: $main-color;
+    fill: $main-color;
+    margin: auto;
+    padding: $size-between-elements-small 0 $size-between-elements-tiny;
+    width: 8rem;
+  }
+
+
+  //=====FOURTH WRAPPER====
+  .fourth-wrapper-index
+  {
+    .standard-parragraph
+    {
+      @include standard-parragraph;
+      margin: 0 auto $size-between-elements-large;
+      border: 1px solid $shadow-color;
+      box-shadow: 2px 2px 5px $shadow-color;
+      padding: $size-between-elements-small $size-between-elements-tiny;
+      word-break: normal;
+      text-align: center;
+    }
+    .standard-h4
+    {
+      @include standard-h4;
+      margin: $size-between-elements-tiny auto 0;
+    }
+    h5
+    {
+      color: rgb(185, 184, 184);
+      font-size: 1.3rem;
+      width: 90%;
+      margin: 0 auto $size-between-elements-tiny;
+    }
+  }
+  .pastor-fallin
+  {
+    display: block;
+    width: $ninety-percent;
+    height: calc(90vw * 1.5);
+    max-height: 600px;
+    max-width: $five-hundred-px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+  }
+
+  //=====FOOTER====
+  .footer
+  {
+    background: $secondary-color;
+    width: 100%;
+    padding: $size-between-elements-small $size-between-elements-small 0;
+    clip-path: polygon(0 100%, 0% 0%, 50% 3%, 100% 0%, 100% 100%);
+    .footer-wrapper
+    {
+      max-width: $five-hundred-px;
+      margin: auto;
+    .church-logo
+    {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      object-position: center;
+      object-fit: center;
+      display: block;
+      margin: $size-between-elements-tiny auto $size-between-elements-small;
+    }
+    .hr
+    {
+      width: 100%;
+      height: .2rem;
+      background: $main-color;
+      margin: $size-between-elements-small 0;
+    }
+    h3
+    {
+      color: $main-color;
+    }
+    a
+    {
+      color: $main-color;
+      font-size: $small-text-size;
+      padding: 0 0 $size-between-elements-tiny;
+      display: flex;
+      align-items: center;
+      transition: transform 300ms ease-in-out;
+      max-width: $five-hundred-px;
+      &:hover
+      {
+        transform: translate(.5rem);
+      }
+    svg
+    {
+      width: 2rem;
+      height: 2rem;
+      stroke: $main-color;
+      fill: $main-color;
+      margin-right: $size-between-elements-tiny;
+    }
+  }
+  .other-locations
+  {
+    .standard-h3
+    {
+      margin: $size-between-elements-small auto;
+      width: 100%;
+    }
+    .standard-parragraph
+    {
+      margin: 0 auto $size-between-elements-tiny;
+      color: $main-color;
+      width: 100%;
+
+    }
+    a
+    {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      max-width: $five-hundred-px;
+    img
+    {
+      width: 2rem;
+      height: 2rem;
+      object-position: center;
+      object-fit: center;
+      display: block;
+      margin-right: $size-between-elements-tiny;
+    }
+  }
+  }
+}
+}
+.my-info
+{
+  background: $main-color;
+  width: 100%;
+  text-align: center;
+}
+
+
+///================ABOUT======================///
+
+.first-wrapper-about-major
+{
+  width: 100%;
+  @include menu;
+.first-wrapper-about
+{
+  margin: auto;
+  width: $ninety-percent;
+  max-width: $five-hundred-px;
+
+  .standard-parragraph
+  {
+   @include standard-parragraph;
+   margin-bottom: $size-between-elements-large;
+  }
+}
+.standard-h3
+{
+  background: url(../images/about.jpg);
+  color: $main-color;
+  height: 90vw;
+  max-height: 25rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: $size-between-elements-large;
+}
+.pastoral-team
+{
+  background: url(../images/pastoral.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.believes
+{
+  background: url(../images/believes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+}
+
+///========GIVE PAGE================
+.first-wrapper-give
+{
+  @include menu;
+  .standard-h3
+  {
+    margin: $size-between-elements-large auto $size-between-elements-small;
+  }
+  img
+  {
+    width: $ninety-percent;
+    max-width: $five-hundred-px;
+    display: block;
+    margin: $size-between-elements-large auto;
+  }
+  .standard-parragraph
+  {
+    @include standard-parragraph;
+  }
+}
+
+//======MENU (this appears in all pages)======
+.open-menu
+{
+  @include open-menu;
+  display: none;
+}
+
+///=========LOGIN PAGE=======
+.login-info
+{
+margin-top: 10rem;
+}
+.login-info input, label
+{
+  display: block;
+  width: 20rem;
+  margin: $size-between-elements-tiny auto;
+}
+.login-info input
+{
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: $text-size-mobile;
+}
+.login-info input:last-child
+{
+margin: $size-between-elements-tiny auto $size-between-elements-giant;
+}
+@include menu;
+.standard-button
+{
+  @include standard-button;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: $main-color;
+  &:hover
+  {
+    background-color: $main-color;
+    border-color: $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}
+.private-message-bkg
+{
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.private-message-box
+{
+height: 40rem;
+width: 90%;
+background: $main-color;
+position: absolute;
+top: 10rem;
+left: 5%;
+z-index: 10;
+}
+.private-message-input, .form textarea
+{
+  position: relative;
+  width: 90%;
+  height: 20rem;
+  display: table-cell;
+  display: block;
+  padding: $size-between-elements-tiny;
+  margin: $size-between-elements-small auto;
+  font-size: $text-size-mobile;
+  resize: none;
+  max-width: 500px;
+}
+.standard-parragraph
+{
+  @include standard-parragraph;
+}
+.form input
+{
+width: 90%;
+max-width: 500px;
+height: 3rem;
+display: block;
+margin: auto;
+margin: $size-between-elements-tiny auto;
+padding: .2rem 1rem;
+font-size: $text-size-mobile;
+}
+.form .standard-h3
+{
+  margin: $size-between-elements-tiny auto;
+}
+
+///======ACCOUNT PAGE======
+.editor-section
+{
+@include editor-section;
+}
