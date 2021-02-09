@@ -446,7 +446,7 @@ body {
     .open-menu a:hover {
       transform: translate(20px); }
     .open-menu a:nth-child(2) {
-      margin: 6.5rem auto 3rem; }
+      margin: 4rem auto 3rem; }
   .open-menu .private-message-wrapper {
     width: 15rem;
     display: flex;
@@ -463,8 +463,7 @@ body {
       max-width: 50px;
       display: inline-block;
       stroke: #023e8a;
-      fill: #023e8a;
-      float: left; }
+      fill: #023e8a; }
     .open-menu .private-message-wrapper #message {
       color: #023e8a;
       font-size: 1rem;

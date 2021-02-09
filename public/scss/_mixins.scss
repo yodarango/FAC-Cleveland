@@ -134,7 +134,7 @@ background: $secondary-color;
     }
     &:nth-child(2)
     {
-      margin: $size-between-elements-giant auto $size-between-elements-small;
+      margin: $size-between-elements-medium auto $size-between-elements-small;
     }
  }
  .private-message-wrapper
@@ -158,7 +158,7 @@ background: $secondary-color;
    display: inline-block;
    stroke: $secondary-color;
    fill: $secondary-color;
-   float: left;
+  // float: left;
  }
  #message
  {
