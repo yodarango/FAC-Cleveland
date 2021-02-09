@@ -12,33 +12,24 @@
   font-family: "Red Hat Display", sans-serif;
   color: #003049;
   box-sizing: border-box;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 *::-webkit-scrollbar {
-  width: none;
-}
+  width: none; }
 
 body {
-  background: whitesmoke;
-}
+  background: whitesmoke; }
 
 @keyframes menu-open {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(45deg);
-  }
-}
+    transform: rotate(45deg); } }
 @keyframes menu-open-2 {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(-45deg);
-  }
-}
+    transform: rotate(-45deg); } }
 * {
   padding: 0;
   margin: 0;
@@ -46,62 +37,48 @@ body {
   font-family: "Red Hat Display", sans-serif;
   color: #003049;
   box-sizing: border-box;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 *::-webkit-scrollbar {
-  width: none;
-}
+  width: none; }
 
 body {
-  background: whitesmoke;
-}
+  background: whitesmoke; }
 
 @keyframes menu-open {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(45deg);
-  }
-}
+    transform: rotate(45deg); } }
 @keyframes menu-open-2 {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(-45deg);
-  }
-}
+    transform: rotate(-45deg); } }
 .first-wrapper-index {
   width: 100%;
-  height: 100vh;
-}
-.first-wrapper-index .menu-closed {
-  height: 4rem;
-  width: 5.3rem;
-  margin: 3rem;
-  z-index: 3;
-}
-.first-wrapper-index .menu-closed:hover {
-  cursor: pointer;
-}
-.first-wrapper-index .menu-closed .menu, .first-wrapper-index .menu-closed .menu::after {
-  width: 5rem;
-  height: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  display: flex;
-  justify-self: left;
-  margin: 0;
-  transition: menu-open 300ms infinite;
-}
-.first-wrapper-index .menu-closed .menu::after {
-  content: "";
-  position: absolute;
-  margin: 1.5rem 0;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  transition: menu-open-2 300ms infinite;
-}
+  height: 100vh; }
+  .first-wrapper-index .menu-closed {
+    height: 4rem;
+    width: 5.3rem;
+    margin: 3rem;
+    z-index: 3; }
+    .first-wrapper-index .menu-closed:hover {
+      cursor: pointer; }
+    .first-wrapper-index .menu-closed .menu, .first-wrapper-index .menu-closed .menu::after {
+      width: 5rem;
+      height: 1rem;
+      box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+      display: flex;
+      justify-self: left;
+      margin: 0;
+      transition: menu-open 300ms infinite; }
+    .first-wrapper-index .menu-closed .menu::after {
+      content: "";
+      position: absolute;
+      margin: 1.5rem 0;
+      box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+      transition: menu-open-2 300ms infinite; }
 
 #welcome-title {
   font-family: "Bebas Neue", cursive;
@@ -110,8 +87,7 @@ body {
   text-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
   text-align: center;
   margin: 17rem auto 0;
-  width: 100%;
-}
+  width: 100%; }
 
 #welcome-title::before {
   content: "";
@@ -122,8 +98,7 @@ body {
   left: 0;
   bottom: -20rem;
   z-index: -1;
-  clip-path: polygon(0 100%, 0% 0%, 50% 10%, 100% 0%, 100% 100%);
-}
+  clip-path: polygon(0 100%, 0% 0%, 50% 10%, 100% 0%, 100% 100%); }
 
 #count-down {
   display: flex;
@@ -132,17 +107,14 @@ body {
   height: 3rem;
   width: 90%;
   max-width: 700px;
-  margin: auto;
-}
-#count-down h3 {
-  font-size: 3rem;
-  color: whitesmoke;
-  text-shadow: 3px 3px 5px rgba(0, 165, 194, 0.274), -3px -3px 5px rgba(0, 165, 194, 0.274);
-}
+  margin: auto; }
+  #count-down h3 {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 3px 3px 5px rgba(0, 165, 194, 0.274), -3px -3px 5px rgba(0, 165, 194, 0.274); }
 
 .second-wrapper-index {
-  z-index: 3;
-}
+  z-index: 3; }
 
 .standard-image {
   background: url(../images/news.jpg);
@@ -153,8 +125,7 @@ body {
   max-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .second-wrapper-index-article {
   text-align: center;
@@ -167,8 +138,7 @@ body {
   margin: 3rem auto;
   width: 90%;
   max-width: 700px;
-  white-space: pre-line;
-}
+  white-space: pre-line; }
 
 .standard-h3 {
   font-family: "Red Hat Display", sans-serif;
@@ -176,61 +146,54 @@ body {
   width: 90%;
   max-width: 700px;
   margin: 3rem auto;
-  font-size: 2.2rem;
-}
+  font-size: 2.2rem; }
 
 .third-wrapper-index {
   width: 100%;
   height: auto;
   padding: 0.2rem 0 3rem;
   margin: 5rem 0;
-  background-color: #023e8a;
-}
-.third-wrapper-index .standard-h3 {
-  color: whitesmoke;
-  margin: 0 auto;
-  max-width: 90%;
-}
-.third-wrapper-index .standard-parragraph {
-  text-align: center;
-  font-size: 1.3rem;
-  font-family: "Red Hat Display", sans-serif;
-  line-height: 2rem;
-  width: 90%;
-  max-width: 700px;
-  margin: 3rem auto;
-  color: whitesmoke;
-  text-align: center;
-  white-space: pre-line;
-  margin: 0.8rem auto 3rem;
-}
-.third-wrapper-index .alert {
-  width: 90%;
-  padding: 0.8rem;
-  background: #eba014;
-  border-radius: 10px;
-  margin: 3rem auto;
-}
-.third-wrapper-index .medium-button {
-  padding: 0.8rem;
-  max-width: 20rem;
-  display: block;
-  color: #003049;
-  background: whitesmoke;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin: 3rem auto;
-  border: 3px solid whitesmoke;
-  transition: 300ms ease-in-out;
-  margin: 0 auto;
-}
-.third-wrapper-index .medium-button:hover {
-  color: whitesmoke;
-  font-family: "Red Hat Display", sans-serif;
-  background: #023e8a;
-}
+  background-color: #023e8a; }
+  .third-wrapper-index .standard-h3 {
+    color: whitesmoke;
+    margin: 0 auto;
+    max-width: 90%; }
+  .third-wrapper-index .standard-parragraph {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Red Hat Display", sans-serif;
+    line-height: 2rem;
+    width: 90%;
+    max-width: 700px;
+    margin: 3rem auto;
+    color: whitesmoke;
+    text-align: center;
+    white-space: pre-line;
+    margin: 0.8rem auto 3rem; }
+  .third-wrapper-index .alert {
+    width: 90%;
+    padding: 0.8rem;
+    background: #eba014;
+    border-radius: 10px;
+    margin: 3rem auto; }
+  .third-wrapper-index .medium-button {
+    padding: 0.8rem;
+    max-width: 20rem;
+    display: block;
+    color: #003049;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 3rem auto;
+    border: 3px solid whitesmoke;
+    transition: 300ms ease-in-out;
+    margin: 0 auto; }
+    .third-wrapper-index .medium-button:hover {
+      color: whitesmoke;
+      font-family: "Red Hat Display", sans-serif;
+      background: #023e8a; }
 
 .standard-svg {
   position: relative;
@@ -239,8 +202,7 @@ body {
   fill: whitesmoke;
   margin: auto;
   padding: 3rem 0 0.8rem;
-  width: 8rem;
-}
+  width: 8rem; }
 
 .fourth-wrapper-index .standard-parragraph {
   text-align: center;
@@ -256,8 +218,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 165, 194, 0.274);
   padding: 3rem 0.8rem;
   word-break: normal;
-  text-align: center;
-}
+  text-align: center; }
 .fourth-wrapper-index .standard-h4 {
   font-family: "Red Hat Display", sans-serif;
   color: #003049;
@@ -266,14 +227,12 @@ body {
   text-align: left;
   font-size: 1.5rem;
   margin: 0.8rem auto;
-  margin: 0.8rem auto 0;
-}
+  margin: 0.8rem auto 0; }
 .fourth-wrapper-index h5 {
   color: #b9b8b8;
   font-size: 1.3rem;
   width: 90%;
-  margin: 0 auto 0.8rem;
-}
+  margin: 0 auto 0.8rem; }
 
 .pastor-fallin {
   display: block;
@@ -283,189 +242,159 @@ body {
   max-width: 700px;
   object-fit: cover;
   object-position: center;
-  margin: auto;
-}
+  margin: auto; }
 
 .footer {
   background: #023e8a;
   width: 100%;
   padding: 3rem 3rem 0;
-  clip-path: polygon(0 100%, 0% 0%, 50% 3%, 100% 0%, 100% 100%);
-}
-.footer .footer-wrapper {
-  max-width: 700px;
-  margin: auto;
-}
-.footer .footer-wrapper .church-logo {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  object-position: center;
-  object-fit: center;
-  display: block;
-  margin: 0.8rem auto 3rem;
-}
-.footer .footer-wrapper .hr {
-  width: 100%;
-  height: 0.2rem;
-  background: whitesmoke;
-  margin: 3rem 0;
-}
-.footer .footer-wrapper h3 {
-  color: whitesmoke;
-}
-.footer .footer-wrapper a {
-  color: whitesmoke;
-  font-size: 1rem;
-  padding: 0 0 0.8rem;
-  display: flex;
-  align-items: center;
-  transition: transform 300ms ease-in-out;
-  max-width: 700px;
-}
-.footer .footer-wrapper a:hover {
-  transform: translate(0.5rem);
-}
-.footer .footer-wrapper a svg {
-  width: 2rem;
-  height: 2rem;
-  stroke: whitesmoke;
-  fill: whitesmoke;
-  margin-right: 0.8rem;
-}
-.footer .footer-wrapper .other-locations .standard-h3 {
-  margin: 3rem auto;
-  width: 100%;
-}
-.footer .footer-wrapper .other-locations .standard-parragraph {
-  margin: 0 auto 0.8rem;
-  color: whitesmoke;
-  width: 100%;
-}
-.footer .footer-wrapper .other-locations a {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  max-width: 700px;
-}
-.footer .footer-wrapper .other-locations a img {
-  width: 2rem;
-  height: 2rem;
-  object-position: center;
-  object-fit: center;
-  display: block;
-  margin-right: 0.8rem;
-}
+  clip-path: polygon(0 100%, 0% 0%, 50% 3%, 100% 0%, 100% 100%); }
+  .footer .footer-wrapper {
+    max-width: 700px;
+    margin: auto; }
+    .footer .footer-wrapper .church-logo {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      object-position: center;
+      object-fit: center;
+      display: block;
+      margin: 0.8rem auto 3rem; }
+    .footer .footer-wrapper .hr {
+      width: 100%;
+      height: .2rem;
+      background: whitesmoke;
+      margin: 3rem 0; }
+    .footer .footer-wrapper h3 {
+      color: whitesmoke; }
+    .footer .footer-wrapper a {
+      color: whitesmoke;
+      font-size: 1rem;
+      padding: 0 0 0.8rem;
+      display: flex;
+      align-items: center;
+      transition: transform 300ms ease-in-out;
+      max-width: 700px; }
+      .footer .footer-wrapper a:hover {
+        transform: translate(0.5rem); }
+      .footer .footer-wrapper a svg {
+        width: 2rem;
+        height: 2rem;
+        stroke: whitesmoke;
+        fill: whitesmoke;
+        margin-right: 0.8rem; }
+    .footer .footer-wrapper .other-locations .standard-h3 {
+      margin: 3rem auto;
+      width: 100%; }
+    .footer .footer-wrapper .other-locations .standard-parragraph {
+      margin: 0 auto 0.8rem;
+      color: whitesmoke;
+      width: 100%; }
+    .footer .footer-wrapper .other-locations a {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      max-width: 700px; }
+      .footer .footer-wrapper .other-locations a img {
+        width: 2rem;
+        height: 2rem;
+        object-position: center;
+        object-fit: center;
+        display: block;
+        margin-right: 0.8rem; }
 
 .my-info {
   background: whitesmoke;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 .first-wrapper-about-major {
-  width: 100%;
-}
-.first-wrapper-about-major .menu-closed {
-  height: 4rem;
-  width: 5.3rem;
-  margin: 3rem;
-  z-index: 3;
-}
-.first-wrapper-about-major .menu-closed:hover {
-  cursor: pointer;
-}
-.first-wrapper-about-major .menu-closed .menu, .first-wrapper-about-major .menu-closed .menu::after {
-  width: 5rem;
-  height: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  display: flex;
-  justify-self: left;
-  margin: 0;
-  transition: menu-open 300ms infinite;
-}
-.first-wrapper-about-major .menu-closed .menu::after {
-  content: "";
-  position: absolute;
-  margin: 1.5rem 0;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  transition: menu-open-2 300ms infinite;
-}
-.first-wrapper-about-major .first-wrapper-about {
-  margin: auto;
-  width: 90%;
-  max-width: 700px;
-}
-.first-wrapper-about-major .first-wrapper-about .standard-parragraph {
-  text-align: center;
-  font-size: 1.3rem;
-  font-family: "Red Hat Display", sans-serif;
-  line-height: 2rem;
-  width: 90%;
-  max-width: 700px;
-  margin: 3rem auto;
-  white-space: pre-line;
-  margin-bottom: 5rem;
-}
-.first-wrapper-about-major .standard-h3 {
-  background: url(../images/about.jpg);
-  color: whitesmoke;
-  height: 90vw;
-  max-height: 25rem;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-}
-.first-wrapper-about-major .pastoral-team {
-  background: url(../images/pastoral.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.first-wrapper-about-major .believes {
-  background: url(../images/believes.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  width: 100%; }
+  .first-wrapper-about-major .menu-closed {
+    height: 4rem;
+    width: 5.3rem;
+    margin: 3rem;
+    z-index: 3; }
+    .first-wrapper-about-major .menu-closed:hover {
+      cursor: pointer; }
+    .first-wrapper-about-major .menu-closed .menu, .first-wrapper-about-major .menu-closed .menu::after {
+      width: 5rem;
+      height: 1rem;
+      box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+      display: flex;
+      justify-self: left;
+      margin: 0;
+      transition: menu-open 300ms infinite; }
+    .first-wrapper-about-major .menu-closed .menu::after {
+      content: "";
+      position: absolute;
+      margin: 1.5rem 0;
+      box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+      transition: menu-open-2 300ms infinite; }
+  .first-wrapper-about-major .first-wrapper-about {
+    margin: auto;
+    width: 90%;
+    max-width: 700px; }
+    .first-wrapper-about-major .first-wrapper-about .standard-parragraph {
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: "Red Hat Display", sans-serif;
+      line-height: 2rem;
+      width: 90%;
+      max-width: 700px;
+      margin: 3rem auto;
+      white-space: pre-line;
+      margin-bottom: 5rem; }
+  .first-wrapper-about-major .standard-h3 {
+    background: url(../images/about.jpg);
+    color: whitesmoke;
+    height: 90vw;
+    max-height: 25rem;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem; }
+  .first-wrapper-about-major .pastoral-team {
+    background: url(../images/pastoral.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .first-wrapper-about-major .believes {
+    background: url(../images/believes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .first-wrapper-give .menu-closed {
   height: 4rem;
   width: 5.3rem;
   margin: 3rem;
-  z-index: 3;
-}
-.first-wrapper-give .menu-closed:hover {
-  cursor: pointer;
-}
-.first-wrapper-give .menu-closed .menu, .first-wrapper-give .menu-closed .menu::after {
-  width: 5rem;
-  height: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  display: flex;
-  justify-self: left;
-  margin: 0;
-  transition: menu-open 300ms infinite;
-}
-.first-wrapper-give .menu-closed .menu::after {
-  content: "";
-  position: absolute;
-  margin: 1.5rem 0;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  transition: menu-open-2 300ms infinite;
-}
+  z-index: 3; }
+  .first-wrapper-give .menu-closed:hover {
+    cursor: pointer; }
+  .first-wrapper-give .menu-closed .menu, .first-wrapper-give .menu-closed .menu::after {
+    width: 5rem;
+    height: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+    display: flex;
+    justify-self: left;
+    margin: 0;
+    transition: menu-open 300ms infinite; }
+  .first-wrapper-give .menu-closed .menu::after {
+    content: "";
+    position: absolute;
+    margin: 1.5rem 0;
+    box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+    transition: menu-open-2 300ms infinite; }
 .first-wrapper-give .standard-h3 {
-  margin: 5rem auto 3rem;
-}
+  margin: 5rem auto 3rem; }
 .first-wrapper-give img {
   width: 90%;
   max-width: 700px;
   display: block;
-  margin: 5rem auto;
-}
+  margin: 5rem auto; }
 .first-wrapper-give .standard-parragraph {
   text-align: center;
   font-size: 1.3rem;
@@ -474,8 +403,7 @@ body {
   width: 90%;
   max-width: 700px;
   margin: 3rem auto;
-  white-space: pre-line;
-}
+  white-space: pre-line; }
 
 .open-menu {
   width: 100%;
@@ -484,121 +412,101 @@ body {
   background: whitesmoke;
   position: fixed;
   top: 0;
-  display: none;
-}
-.open-menu .menu-closed {
-  height: 4rem;
-  width: 5.3rem;
-  margin: 3rem;
-  z-index: 3;
-}
-.open-menu .menu-closed:hover {
-  cursor: pointer;
-}
-.open-menu .menu-closed .menu, .open-menu .menu-closed .menu::after {
-  width: 5rem;
-  height: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  display: flex;
-  justify-self: left;
-  margin: 0;
-  transition: menu-open 300ms infinite;
-}
-.open-menu .menu-closed .menu::after {
-  content: "";
-  position: absolute;
-  margin: 1.5rem 0;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  transition: menu-open-2 300ms infinite;
-}
-.open-menu a {
-  font-size: 2.2rem;
-  font-weight: 800;
-  font-family: "Red Hat Display", sans-serif;
-  color: #023e8a;
-  margin: 3rem auto;
-  transition: transform 300ms ease-in-out;
-  display: block;
-  text-align: center;
-}
-.open-menu a:hover {
-  transform: translate(20px);
-}
-.open-menu a:nth-child(2) {
-  margin: 6.5rem auto 3rem;
-}
-.open-menu .private-message-wrapper {
-  width: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: auto;
-  cursor: pointer;
-  transition: transform 300ms ease-in-out;
-}
-.open-menu .private-message-wrapper:hover {
-  transform: translate(20px);
-}
-.open-menu .private-message-wrapper #Capa_1 {
-  width: 15%;
-  height: auto;
-  max-width: 50px;
-  display: inline-block;
-  stroke: #023e8a;
-  fill: #023e8a;
-  float: left;
-}
-.open-menu .private-message-wrapper #message {
-  color: #023e8a;
-  font-size: 1rem;
-  display: inline-block;
-}
+  display: none; }
+  .open-menu .menu-closed {
+    height: 4rem;
+    width: 5.3rem;
+    margin: 3rem;
+    z-index: 3; }
+    .open-menu .menu-closed:hover {
+      cursor: pointer; }
+    .open-menu .menu-closed .menu, .open-menu .menu-closed .menu::after {
+      width: 5rem;
+      height: 1rem;
+      box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+      display: flex;
+      justify-self: left;
+      margin: 0;
+      transition: menu-open 300ms infinite; }
+    .open-menu .menu-closed .menu::after {
+      content: "";
+      position: absolute;
+      margin: 1.5rem 0;
+      box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+      transition: menu-open-2 300ms infinite; }
+  .open-menu a {
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: "Red Hat Display", sans-serif;
+    color: #023e8a;
+    margin: 3rem auto;
+    transition: transform 300ms ease-in-out;
+    display: block;
+    text-align: center; }
+    .open-menu a:hover {
+      transform: translate(20px); }
+    .open-menu a:nth-child(2) {
+      margin: 6.5rem auto 3rem; }
+  .open-menu .private-message-wrapper {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out; }
+    .open-menu .private-message-wrapper:hover {
+      transform: translate(20px); }
+    .open-menu .private-message-wrapper #Capa_1 {
+      width: 15%;
+      height: auto;
+      max-width: 50px;
+      display: inline-block;
+      stroke: #023e8a;
+      fill: #023e8a;
+      float: left; }
+    .open-menu .private-message-wrapper #message {
+      color: #023e8a;
+      font-size: 1rem;
+      display: inline-block; }
 
 .login-info {
-  margin-top: 10rem;
-}
+  margin-top: 10rem; }
 
 .login-info input, label {
   display: block;
   width: 20rem;
-  margin: 0.8rem auto;
-}
+  margin: 0.8rem auto; }
 
 .login-info input {
   height: 3rem;
   padding: 0 1rem;
-  font-size: 1.3rem;
-}
+  font-size: 1.3rem; }
 
 .login-info input:last-child {
-  margin: 0.8rem auto 6.5rem;
-}
+  margin: 0.8rem auto 6.5rem; }
 
 .menu-closed {
   height: 4rem;
   width: 5.3rem;
   margin: 3rem;
-  z-index: 3;
-}
-.menu-closed:hover {
-  cursor: pointer;
-}
-.menu-closed .menu, .menu-closed .menu::after, .first-wrapper-index .menu-closed .menu::after, .first-wrapper-about-major .menu-closed .menu::after, .first-wrapper-give .menu-closed .menu::after, .open-menu .menu-closed .menu::after {
-  width: 5rem;
-  height: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  display: flex;
-  justify-self: left;
-  margin: 0;
-  transition: menu-open 300ms infinite;
-}
-.menu-closed .menu::after, .first-wrapper-index .menu-closed .menu::after, .first-wrapper-about-major .menu-closed .menu::after, .first-wrapper-give .menu-closed .menu::after, .open-menu .menu-closed .menu::after {
-  content: "";
-  position: absolute;
-  margin: 1.5rem 0;
-  box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
-  transition: menu-open-2 300ms infinite;
-}
+  z-index: 3; }
+  .menu-closed:hover {
+    cursor: pointer; }
+  .menu-closed .menu, .first-wrapper-index .menu-closed .menu::after, .first-wrapper-about-major .menu-closed .menu::after, .first-wrapper-give .menu-closed .menu::after, .open-menu .menu-closed .menu::after, .menu-closed .menu::after {
+    width: 5rem;
+    height: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+    display: flex;
+    justify-self: left;
+    margin: 0;
+    transition: menu-open 300ms infinite; }
+  .first-wrapper-index .menu-closed .menu::after, .first-wrapper-about-major .menu-closed .menu::after, .first-wrapper-give .menu-closed .menu::after, .open-menu .menu-closed .menu::after, .menu-closed .menu::after {
+    content: "";
+    position: absolute;
+    margin: 1.5rem 0;
+    box-shadow: 5px 5px 10px rgba(0, 165, 194, 0.274);
+    transition: menu-open-2 300ms infinite; }
 
 .standard-button {
   padding: 0.8rem;
@@ -615,19 +523,16 @@ body {
   transition: 300ms ease-in-out;
   background-color: #023e8a;
   border-color: #023e8a;
-  color: whitesmoke;
-}
-.standard-button:hover {
-  color: whitesmoke;
-  font-family: "Red Hat Display", sans-serif;
-  background: #023e8a;
-}
-.standard-button:hover {
-  background-color: whitesmoke;
-  border-color: #023e8a;
-  color: #023e8a;
-  cursor: pointer;
-}
+  color: whitesmoke; }
+  .standard-button:hover {
+    color: whitesmoke;
+    font-family: "Red Hat Display", sans-serif;
+    background: #023e8a; }
+  .standard-button:hover {
+    background-color: whitesmoke;
+    border-color: #023e8a;
+    color: #023e8a;
+    cursor: pointer; }
 
 .private-message-bkg {
   background: rgba(0, 0, 0, 0.5);
@@ -636,8 +541,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 9;
-}
+  z-index: 9; }
 
 .private-message-box {
   height: 40rem;
@@ -646,8 +550,7 @@ body {
   position: absolute;
   top: 10rem;
   left: 5%;
-  z-index: 10;
-}
+  z-index: 10; }
 
 .private-message-input, .form textarea {
   position: relative;
@@ -659,8 +562,7 @@ body {
   margin: 3rem auto;
   font-size: 1.3rem;
   resize: none;
-  max-width: 500px;
-}
+  max-width: 500px; }
 
 .standard-parragraph {
   text-align: center;
@@ -670,8 +572,7 @@ body {
   width: 90%;
   max-width: 700px;
   margin: 3rem auto;
-  white-space: pre-line;
-}
+  white-space: pre-line; }
 
 .form input {
   width: 90%;
@@ -680,108 +581,88 @@ body {
   display: block;
   margin: auto;
   margin: 0.8rem auto;
-  padding: 0.2rem 1rem;
-  font-size: 1.3rem;
-}
+  padding: .2rem 1rem;
+  font-size: 1.3rem; }
 
 .form .standard-h3 {
-  margin: 0.8rem auto;
-}
+  margin: 0.8rem auto; }
 
 .editor-section {
   width: 90%;
   max-width: 600px;
-  margin: auto;
-}
-.editor-section .editor-section__announcement {
-  margin: 3rem 0;
-}
-.editor-section .editor-section__announcement .standard-h4 {
-  vertical-align: middle;
-  padding: 0.8rem;
-  position: relative;
-  background: #023e8a;
-  color: whitesmoke;
-  line-height: 3rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.5);
-}
-.editor-section .editor-section__announcement .standard-h4 .cross-wrapper {
-  display: block;
-  position: relative;
-  width: 35px;
-  height: 30px;
-  top: 2px;
-  cursor: pointer;
-}
-.editor-section .editor-section__announcement .standard-h4 .cross-wrapper span:first-child, .editor-section .editor-section__announcement .standard-h4 .cross-wrapper span:nth-child(2) {
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  height: 3px;
-  background: whitesmoke;
-  top: -10px;
-}
-.editor-section .editor-section__announcement .standard-h4 .cross-wrapper span:nth-child(2) {
-  left: 0px;
-  top: -57px;
-  transform: rotate(90deg);
-}
-.editor-section .editor-section__announcement .standard-h4 span:nth-child(2) {
-  color: whitesmoke;
-  font-size: 1rem;
-  font-weight: 200;
-  cursor: pointer;
-  display: none;
-}
-.editor-section .editor-section__announcement .hidding-element {
-  display: none;
-  border: 2px solid #c4c4c4;
-  box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.5);
-}
-.editor-section .editor-section__announcement .hidding-element .editorInput, .editor-section .editor-section__announcement .hidding-element .editorTextArea {
-  margin: 0.8rem;
-  display: block;
-  margin: 0.8rem auto;
-  width: 90%;
-  height: 20rem;
-  font-size: 1.3rem;
-  resize: none;
-  border: 1px solid #023e8a;
-  padding: 0.8rem;
-  white-space: pre-line;
-}
-.editor-section .editor-section__announcement .hidding-element .editorInput {
-  height: 3rem;
-}
-.editor-section .editor-section__announcement #on-off {
-  display: inline-block;
-  transform: scale(2.5);
-  margin: 3rem 10%;
-}
-.editor-section .editor-section__announcement #on-off-label {
-  display: inline-block;
-  width: 10rem;
-}
+  margin: auto; }
+  .editor-section .editor-section__announcement {
+    margin: 3rem 0; }
+    .editor-section .editor-section__announcement .standard-h4 {
+      vertical-align: middle;
+      padding: 0.8rem;
+      position: relative;
+      background: #023e8a;
+      color: whitesmoke;
+      line-height: 3rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.5); }
+      .editor-section .editor-section__announcement .standard-h4 .cross-wrapper {
+        display: block;
+        position: relative;
+        width: 35px;
+        height: 30px;
+        top: 2px;
+        cursor: pointer; }
+        .editor-section .editor-section__announcement .standard-h4 .cross-wrapper span:first-child, .editor-section .editor-section__announcement .standard-h4 .cross-wrapper span:nth-child(2) {
+          display: inline-block;
+          position: relative;
+          width: 20px;
+          height: 3px;
+          background: whitesmoke;
+          top: -10px; }
+        .editor-section .editor-section__announcement .standard-h4 .cross-wrapper span:nth-child(2) {
+          left: 0px;
+          top: -57px;
+          transform: rotate(90deg); }
+      .editor-section .editor-section__announcement .standard-h4 span:nth-child(2) {
+        color: whitesmoke;
+        font-size: 1rem;
+        font-weight: 200;
+        cursor: pointer;
+        display: none; }
+    .editor-section .editor-section__announcement .hidding-element {
+      display: none;
+      border: 2px solid #c4c4c4;
+      box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.5); }
+      .editor-section .editor-section__announcement .hidding-element .editorInput, .editor-section .editor-section__announcement .hidding-element .editorTextArea {
+        margin: 0.8rem;
+        display: block;
+        margin: 0.8rem auto;
+        width: 90%;
+        height: 20rem;
+        font-size: 1.3rem;
+        resize: none;
+        border: 1px solid #023e8a;
+        padding: 0.8rem;
+        white-space: pre-line; }
+      .editor-section .editor-section__announcement .hidding-element .editorInput {
+        height: 3rem; }
+    .editor-section .editor-section__announcement #on-off {
+      display: inline-block;
+      transform: scale(2.5);
+      margin: 3rem 10%; }
+    .editor-section .editor-section__announcement #on-off-label {
+      display: inline-block;
+      width: 10rem; }
 
 @keyframes menu-open {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(45deg);
-  }
-}
+    transform: rotate(45deg); } }
 @keyframes menu-open-2 {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(-45deg);
-  }
-}
+    transform: rotate(-45deg); } }
 * {
   padding: 0;
   margin: 0;
@@ -789,33 +670,24 @@ body {
   font-family: "Red Hat Display", sans-serif;
   color: #003049;
   box-sizing: border-box;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 *::-webkit-scrollbar {
-  width: none;
-}
+  width: none; }
 
 body {
-  background: whitesmoke;
-}
+  background: whitesmoke; }
 
 @keyframes menu-open {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(45deg);
-  }
-}
+    transform: rotate(45deg); } }
 @keyframes menu-open-2 {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
   to {
-    transform: rotate(-45deg);
-  }
-}
+    transform: rotate(-45deg); } }
 @media screen and (min-width: 600px) {
   .svg-wrapper {
     display: inline-block;
@@ -826,22 +698,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-  }
-  .svg-wrapper .first-svg-wrapper, .svg-wrapper .second-svg-wrapper {
-    width: 49%;
-    margin: 0;
-    height: 400px;
-  }
-  .svg-wrapper .standard-svg {
-    position: relative;
-    display: block;
-    stroke: whitesmoke;
-    fill: whitesmoke;
-    margin: 0 auto;
-    padding: 3rem 0 0.8rem;
-    width: 7rem;
-  }
+    flex-direction: row; }
+    .svg-wrapper .first-svg-wrapper, .svg-wrapper .second-svg-wrapper {
+      width: 49%;
+      margin: 0;
+      height: 400px; }
+    .svg-wrapper .standard-svg {
+      position: relative;
+      display: block;
+      stroke: whitesmoke;
+      fill: whitesmoke;
+      margin: 0 auto;
+      padding: 3rem 0 0.8rem;
+      width: 7rem; }
 
   .second-wrapper-index-article {
     text-align: center;
@@ -852,24 +721,18 @@ body {
     max-width: 700px;
     margin: 3rem auto;
     font-size: 1.5rem;
-    white-space: pre-line;
-  }
+    white-space: pre-line; }
 
   .alert .standard-parragraph {
-    font-size: 1.5rem;
-  }
+    font-size: 1.5rem; }
 
   .fourth-wrapper-index .standard-parragraph {
-    font-size: 1.5rem;
-  }
+    font-size: 1.5rem; }
 
   .standard-h3 {
-    font-size: 2.5rem;
-  }
+    font-size: 2.5rem; }
 
   .standard-parragraph {
-    font-size: 1.5rem;
-  }
-}
+    font-size: 1.5rem; } }
 
 /*# sourceMappingURL=main.css.map */
