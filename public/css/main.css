@@ -446,7 +446,7 @@ body {
     .open-menu a:hover {
       transform: translate(20px); }
     .open-menu a:nth-child(2) {
-      margin: 4rem auto 3rem; }
+      margin: 3rem auto 3rem; }
   .open-menu .private-message-wrapper {
     width: 15rem;
     display: flex;
@@ -543,11 +543,11 @@ body {
   z-index: 9; }
 
 .private-message-box {
-  height: 40rem;
+  height: 37rem;
   width: 90%;
   background: whitesmoke;
   position: absolute;
-  top: 10rem;
+  top: 5rem;
   left: 5%;
   z-index: 10; }
 
