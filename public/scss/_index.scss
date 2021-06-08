@@ -14,10 +14,10 @@
   {
   font-family: $title-font;
   font-size: $big-title;
-  color: $main-color;
-  text-shadow: $blue-shadow;
+  color: $secondary-color;
+  //text-shadow: $blue-shadow;
   text-align: center;
-  margin: 17rem auto 0;
+  margin: 14rem auto 0;
   width: 100%;
   }
   #welcome-title::before
@@ -44,8 +44,8 @@
   h3
   {
     font-size: $medium-title;
-    color: $main-color;
-    text-shadow: 3px 3px 5px $shadow-color, -3px -3px 5px $shadow-color;
+    color: $secondary-color;
+   // text-shadow: 3px 3px 5px $shadow-color, -3px -3px 5px $shadow-color;
   }
 }
 
